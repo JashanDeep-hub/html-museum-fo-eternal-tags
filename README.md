@@ -33,6 +33,7 @@
 
 ## 🧱 Folder Structure
 html-museum-of-eternal-tags/
+
 ├── README.md
 
 ├── index.html
