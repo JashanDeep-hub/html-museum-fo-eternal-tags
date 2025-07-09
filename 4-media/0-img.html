@@ -14,34 +14,34 @@
   <body>
 
     <!-- Basic usage with required attributes -->
-    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    <img src="https://placehold.net/3.png" alt="Placeholder image">
     <!-- src: The image URL -->
     <!-- alt: Required for accessibility (screen readers, text-only mode) -->
 
     <hr>
 
     <!-- Width & Height: Can be set in attributes. Use caution — distorts if aspect ratio mismatches -->
-    <img src="https://via.placeholder.com/100x50" alt="Stretched image" width="300" height="100">
+    <img src="https://placehold.net/4.png" alt="Stretched image" width="300" height="100">
 
     <hr>
 
     <!-- loading="lazy": Tells browser to defer loading until needed (Lazy load) -->
-    <img src="https://via.placeholder.com/300" alt="Lazy loaded image" loading="lazy">
+    <img src="https://placehold.net/2.png" alt="Lazy loaded image" loading="lazy">
 
     <!-- loading="eager": Forces early loading (default behavior) -->
-    <img src="https://via.placeholder.com/300" alt="Eager image" loading="eager">
+    <img src="https://placehold.net/1.png" alt="Eager image" loading="eager">
 
     <hr>
 
     <!-- decoding: "sync", "async", or "auto" — browser decides how to decode -->
-    <img src="https://via.placeholder.com/150" alt="Async decoding" decoding="async">
-    <img src="https://via.placeholder.com/150" alt="Sync decoding" decoding="sync">
+    <img src="https://placehold.net/5.png" alt="Async decoding" decoding="async">
+    <img src="https://placehold.net/10.png" alt="Sync decoding" decoding="sync">
 
     <hr>
 
     <!-- ismap: Used with <a> to submit click coordinates to server. Old school. -->
     <a href="/click-coordinates" target="_blank">
-      <img src="https://via.placeholder.com/200" alt="Clickable server map" ismap>
+      <img src="https://placehold.net/6.png" alt="Clickable server map" ismap>
     </a>
 
     <!-- ismap requires an <a> wrapper to function. Sends ?x,y to URL -->
@@ -49,7 +49,7 @@
     <hr>
 
     <!-- usemap: Connects to a client-side <map> definition -->
-    <img src="https://via.placeholder.com/300x200" alt="Client-side image map" usemap="#faces">
+    <img src="https://placehold.net/8.png" alt="Client-side image map" usemap="#faces">
 
     <map name="faces">
       <area shape="rect" coords="0,0,100,100" href="#face1" alt="Face 1">
