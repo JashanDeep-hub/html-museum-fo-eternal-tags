@@ -1,0 +1,26 @@
+<!--
+  6-map-area.html
+  Exhibit: <map> and <area> — Client-Side Image Interactivity
+
+  These define clickable zones on images.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><map> and <area> — Point and Click</title>
+  </head>
+  <body>
+
+    <h2>Client-Side Image Map</h2>
+
+    <img src="https://via.placeholder.com/400x200" usemap="#mymap" alt="Clickable map">
+
+    <map name="mymap">
+      <area shape="rect" coords="10,10,100,100" href="#one" alt="Rectangle area">
+      <area shape="circle" coords="300,100,50" href="#two" alt="Circle area">
+      <area shape="poly" coords="120,50,170,90,160,140,100,100" href="#three" alt="Polygon area">
+    </map>
+
+  </body>
+</html>

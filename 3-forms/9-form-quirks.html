@@ -1,0 +1,30 @@
+<!--
+  9-form-quirks.html
+  Exhibit: Form Quirks — Ghosts of Legacy HTML
+
+  Some tags behave differently when inside a form.
+  Some tags are valid even outside a form. It’s a mess.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title>Form Quirks & Abominations</title></head>
+  <body>
+
+    <form>
+      <input name="evil" value="true" disabled>
+      <!-- Disabled fields don’t submit. Hidden trap. -->
+    </form>
+
+    <input type="text" name="rogue" form="externalForm">
+    <!-- Outside the form. Still submits to it via 'form' attribute. -->
+
+    <form id="externalForm" action="/purgatory" method="post">
+      <button type="submit">Submit External Input</button>
+    </form>
+
+    <p><strong>Reminder:</strong> You can submit fields outside the form using <code>form="formId"</code>.</p>
+    <p>But not every browser likes it. It’s valid HTML5 — doesn’t mean it works everywhere.</p>
+
+  </body>
+</html>

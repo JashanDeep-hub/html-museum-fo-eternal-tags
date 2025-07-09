@@ -1,0 +1,37 @@
+<!--
+  5-jsless-behavior-tricks.html
+  Exhibit: Simulated interactivity without JavaScript
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>No JS, Still Alive</title>
+  </head>
+  <body>
+
+    <details open>
+      <summary>Toggle</summary>
+      <form>
+        <input type="radio" name="step" value="1"> Step 1<br>
+        <input type="radio" name="step" value="2"> Step 2<br>
+      </form>
+    </details>
+
+    <label>
+      <input type="checkbox">
+      Fake toggle
+    </label>
+
+    <!--
+      <details> + <summary> = native toggle
+      <input type="radio"> = multi-step flow
+    -->
+
+  </body>
+</html>
+<!--
+  This example shows how HTML can simulate interactivity without JavaScript.
+  The <details> and <summary> elements create a toggle effect.
+  The <input type="radio"> elements allow for multi-step flows.
+  The checkbox is a fake toggle, demonstrating that you can create interactive-like behavior with just HTML.

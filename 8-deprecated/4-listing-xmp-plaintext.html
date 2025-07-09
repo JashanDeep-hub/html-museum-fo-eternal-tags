@@ -1,0 +1,34 @@
+<!--
+  4-listing-xmp-plaintext.html
+  Exhibit: <listing>, <xmp>, <plaintext>
+  These turn off the parser — raw output mode.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Vomit Zone: listing, xmp, plaintext</title>
+  </head>
+  <body>
+
+    <listing>
+      <div>This will render as raw text</div>
+    </listing>
+
+    <xmp>
+      <b>This is not bold</b>
+    </xmp>
+
+    <plaintext>
+      <html>
+        <head>This is all plain now</head>
+      </html>
+
+    <!--
+      <listing>: Like <pre>, but less sane.
+      <xmp>: Preformatted text — disables parsing.
+      <plaintext>: Everything after this is raw text, including tags.
+    -->
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+  2-fake-inputs-without-forms.html
+  Exhibit: Inputs outside forms — still work
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inputs Without Forms</title>
+  </head>
+  <body>
+
+    <input name="ghost" value="No Form Around Me">
+
+    <button formaction="/ghost-submit" formmethod="POST" formnovalidate>
+      Submit via Ghost Attributes
+    </button>
+
+    <!--
+      Inputs outside of <form> are still sent via associated attributes on buttons.
+      formaction, formmethod, formnovalidate, formenctype can target forms by ID.
+    -->
+
+  </body>
+</html>

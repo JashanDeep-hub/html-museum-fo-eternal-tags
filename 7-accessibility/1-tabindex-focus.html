@@ -1,0 +1,35 @@
+<!--
+  1-tabindex-focus.html
+  Exhibit: tabindex and keyboard flow
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabindex Focus Order</title>
+  </head>
+  <body>
+
+    <a href="#" tabindex="3">Third</a>
+    <a href="#" tabindex="1">First</a>
+    <a href="#" tabindex="2">Second</a>
+    <div tabindex="0">Focusable Div</div>
+
+    <!--
+      tabindex="1+" — custom order
+      tabindex="0" — default order
+      tabindex="-1" — focusable but not reachable via Tab
+    -->
+
+  </body>
+</html>
+<!--
+  Access keys and focus tricks
+  - accesskey: keyboard shortcut to activate
+  - autofocus: auto-focus on page load
+  - contenteditable: editable element
+  - draggable: drag-and-drop support
+  - hidden: hidden but in DOM
+  - inert: uninteractive area (not widely supported)
+  - tabindex: focus order
+-->

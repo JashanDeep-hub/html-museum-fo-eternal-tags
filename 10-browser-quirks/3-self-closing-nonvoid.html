@@ -1,0 +1,23 @@
+<!--
+  3-self-closing-nonvoid.html
+  Exhibit: Self-closing non-void tags cause parsing oddities
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Self-Closing Misuse</title>
+  </head>
+  <body>
+
+    <div/>
+    <script/>
+    <textarea/>
+
+    <!--
+      These tags are NOT void.
+      In HTML, this doesn’t close them — it creates unexpected children or messes up parsing.
+    -->
+
+  </body>
+</html>

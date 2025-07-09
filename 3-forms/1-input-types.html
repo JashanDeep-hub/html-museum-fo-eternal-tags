@@ -1,0 +1,57 @@
+<!--
+  1-input-types.html
+  Exhibit: <input> — The Multipurpose Demon
+
+  Over 20 types. Most of them abused. Some don't work consistently. All must be known.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Types — The Many Faces of <input></title>
+  </head>
+  <body>
+
+    <form>
+      <!-- Text Variants -->
+      <p><input type="text" name="text"> — type="text"</p>
+      <p><input type="password" name="pass"> — type="password"</p>
+      <p><input type="search" name="q"> — type="search"</p>
+      <p><input type="email" name="email"> — type="email"</p>
+      <p><input type="tel" name="phone"> — type="tel"</p>
+      <p><input type="url" name="site"> — type="url"</p>
+
+      <!-- Numbers & Ranges -->
+      <p><input type="number" name="age" min="0" max="120"> — type="number"</p>
+      <p><input type="range" name="volume" min="0" max="100"> — type="range"</p>
+
+      <!-- Booleans -->
+      <p><input type="checkbox" name="terms"> — type="checkbox"</p>
+      <p><input type="radio" name="gender" value="m"> Male
+         <input type="radio" name="gender" value="f"> Female</p>
+
+      <!-- Dates & Time -->
+      <p><input type="date" name="dob"> — type="date"</p>
+      <p><input type="datetime-local" name="datetime"> — type="datetime-local"</p>
+      <p><input type="time" name="wakeup"> — type="time"</p>
+      <p><input type="month" name="month"> — type="month"</p>
+      <p><input type="week" name="week"> — type="week"</p>
+
+      <!-- Files -->
+      <p><input type="file" name="resume"> — type="file"</p>
+      <p><input type="hidden" name="tracker" value="666"> — type="hidden"</p>
+
+      <!-- Submission -->
+      <p><input type="submit" value="Submit"></p>
+      <p><input type="reset" value="Reset Form"></p>
+
+      <!-- Others -->
+      <p><input type="color" name="favcolor"> — type="color"</p>
+      <p><input type="image" src="submit.png" alt="Image Button"> — type="image"</p>
+      <p><input type="button" value="Do Nothing"> — type="button"</p>
+    </form>
+
+    <p>Some inputs only work if the browser feels like it. Others lie to you. All must be respected — or destroyed.</p>
+
+  </body>
+</html>

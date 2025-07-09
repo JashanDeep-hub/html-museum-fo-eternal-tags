@@ -1,0 +1,35 @@
+<!--
+  4-conditional-comments.html
+  Exhibit: Target IE with weird proprietary syntax
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conditional Comments</title>
+
+    <!--[if IE]>
+      <style>
+        body { background: red; }
+      </style>
+    <![endif]-->
+
+    <!--[if !IE]>-->
+      <p>You're not in Internet Explorer.</p>
+    <!--<![endif]-->
+
+    <!--
+      These only worked in Internet Explorer.
+      Used to target IE-specific CSS or scripts.
+    -->
+
+  </head>
+  <body>
+    <p>This page abuses conditional comments.</p>
+  </body>
+</html>
+<!--
+  Conditional comments were a way to target Internet Explorer specifically.
+  They allowed developers to write IE-specific CSS or scripts without affecting other browsers.
+  This feature is now deprecated and not supported in modern browsers.
+-->

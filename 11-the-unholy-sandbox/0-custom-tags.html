@@ -1,0 +1,30 @@
+<!--
+  0-custom-tags.html
+  Exhibit: HTML lets you invent fake tags.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Tags Work… Somehow</title>
+  </head>
+  <body>
+
+    <my-component>This is a fake tag. Browser doesn't care.</my-component>
+
+    <alien-protocol>
+      <weird-slot>It renders as inline block</weird-slot>
+    </alien-protocol>
+
+    <!--
+      Unknown elements render as inline or block depending on content model.
+      No validation, no problem.
+    -->
+
+  </body>
+</html>
+<!--
+  This example shows that HTML allows you to create custom tags.
+  The browser doesn't care about the tag names, it just renders them.
+  This can be useful for creating reusable components or for semantic purposes.
+  However, these custom tags won't have any built-in behavior or styling unless you add it with JavaScript or CSS.

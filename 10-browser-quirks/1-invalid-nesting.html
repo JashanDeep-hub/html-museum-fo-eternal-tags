@@ -1,0 +1,24 @@
+<!--
+  1-invalid-nesting.html
+  Exhibit: Bad tag structure that still renders
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Broken Nesting</title>
+  </head>
+  <body>
+
+    <p><div>This is illegal. Paragraphs can't wrap blocks.</div></p>
+
+    <ul>
+      <li><li><li>This isn't a valid list</li></li></li>
+    </ul>
+
+    <!--
+      This is all invalid. But browsers fix it magically in their parser.
+    -->
+
+  </body>
+</html>

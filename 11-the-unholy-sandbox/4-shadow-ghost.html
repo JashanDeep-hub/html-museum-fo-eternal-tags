@@ -1,0 +1,22 @@
+<!--
+  4-shadow-ghost.html
+  Exhibit: Shadow DOM parts that mean nothing without JS
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shadow DOM Ghosts</title>
+  </head>
+  <body>
+
+    <div part="header">This would style in a Shadow DOM world</div>
+    <slot name="footer">Default content</slot>
+
+    <!--
+      <slot>, part="", ::part — all tied to Shadow DOM styling.
+      But you can still write them, and they do nothing.
+    -->
+
+  </body>
+</html>

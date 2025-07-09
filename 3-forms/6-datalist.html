@@ -1,0 +1,33 @@
+<!--
+  6-datalist.html
+  Exhibit: <datalist> — Autocomplete from the Void
+
+  Pairs with input to give suggestion dropdowns.
+  People confuse it with <select>. Don’t.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title>Datalist — Not a Dropdown</title></head>
+  <body>
+
+    <form>
+
+      <label for="browser">Choose a browser:</label>
+      <input list="browsers" id="browser" name="browser">
+      <datalist id="browsers">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Brave">
+        <option value="Opera">
+        <option value="Edge">
+        <option value="Lynx">
+      </datalist>
+
+    </form>
+
+    <p><strong>Reminder:</strong> <code>&lt;datalist&gt;</code> gives hints, not hard choices.</p>
+    <p>You can still type anything. This isn’t a dropdown. It’s a suggestion ghost.</p>
+
+  </body>
+</html>

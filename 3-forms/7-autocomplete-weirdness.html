@@ -1,0 +1,42 @@
+<!--
+  7-autocomplete-weirdness.html
+  Exhibit: Autocomplete — The Browser Brain Leak
+
+  Autocomplete is a browser guessing game. Use the right name or it fails.
+  No rules. Just chaos.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title>Autocomplete — The Hidden Magic Words</title></head>
+  <body>
+
+    <form autocomplete="on">
+
+      <label>Email:
+        <input type="email" name="email" autocomplete="email">
+      </label><br>
+
+      <label>Credit Card:
+        <input type="text" name="cc" autocomplete="cc-number">
+      </label><br>
+
+      <label>CVV:
+        <input type="text" name="cvv" autocomplete="cc-csc">
+      </label><br>
+
+      <label>Phone:
+        <input type="tel" name="phone" autocomplete="tel-national">
+      </label><br>
+
+      <label>Postal Code:
+        <input type="text" name="zip" autocomplete="postal-code">
+      </label>
+
+    </form>
+
+    <p>Autocomplete tokens must be *exact*. One wrong letter and the browser ignores you completely.</p>
+    <p>It’s like casting a spell with exact incantation. And you’re not a wizard.</p>
+
+  </body>
+</html>

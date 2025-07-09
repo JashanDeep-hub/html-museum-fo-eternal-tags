@@ -1,0 +1,31 @@
+<!--
+  1-applet-basefont-dir.html
+  Exhibit: <applet>, <basefont>, <dir>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dead Tags: applet, basefont, dir</title>
+  </head>
+  <body>
+
+    <applet code="com.old.Applet" width="300" height="150">
+      This would’ve loaded Java in 1999.
+    </applet>
+
+    <basefont size="5" face="Arial" color="blue">
+
+    <dir>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </dir>
+
+    <!--
+      <applet>: Java plugin embed — totally unsupported.
+      <basefont>: Defines default font — ignored.
+      <dir>: List like <ul>, obsolete.
+    -->
+
+  </body>
+</html>

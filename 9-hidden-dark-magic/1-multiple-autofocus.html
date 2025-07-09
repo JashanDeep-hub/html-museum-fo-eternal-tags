@@ -1,0 +1,22 @@
+<!--
+  1-multiple-autofocus.html
+  Exhibit: Abusing autofocus on multiple elements
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Autofocus — Who Wins?</title>
+  </head>
+  <body>
+
+    <input type="text" autofocus placeholder="First field">
+    <input type="text" autofocus placeholder="Second field">
+
+    <!--
+      Only one autofocus will win.
+      The last one parsed typically overrides earlier ones.
+    -->
+
+  </body>
+</html>

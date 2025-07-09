@@ -1,0 +1,28 @@
+<!--
+  4-link-and-style.html
+  Exhibit: <link> and <style> — Style-Free in a Style-Loving World
+
+  <link> is for external resources like stylesheets or icons.
+  <style> is forbidden here unless you're showing it as a tag example.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Linking a fake stylesheet. Don’t worry, we won’t use it. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- rel can be a ton of other things too -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml">
+
+    <!-- <style> is here only as a tagged corpse -->
+    <style>
+      /* This is illegal in this museum. CSS is banned. But here’s the corpse. */
+      body { background: red; } /* DISREGARD. You are not allowed to do this. */
+    </style>
+  </head>
+  <body>
+    <p><code>&lt;link&gt;</code> connects external resources — usually stylesheets, icons, or feeds. Ignore <code>rel=stylesheet</code> — no CSS allowed.</p>
+    <p><code>&lt;style&gt;</code> is shown here as a specimen. You will never use it in this museum.</p>
+  </body>
+</html>

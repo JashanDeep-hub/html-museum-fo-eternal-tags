@@ -1,0 +1,39 @@
+<!--
+  2-object-embed.html
+  Exhibit: <object> and <embed> — Media Embedding Chaos
+
+  These are used to inject files, plugins, documents, and horrors into pages.
+  <object> supports fallback. <embed> does not.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><object> and <embed> — The Plugin Portals</title>
+  </head>
+  <body>
+
+    <h2><object> — The Fallback Container</h2>
+
+    <object data="https://www.w3.org/TR/html4/images/strict.dtd" type="text/plain" width="400" height="200">
+      <p>Fallback content if the object can't be loaded.</p>
+    </object>
+
+    <!--
+      data: File URL
+      type: MIME type
+      width/height: Display size
+      Content between tags = fallback
+    -->
+
+    <h2><embed> — The Barebones Bullet</h2>
+
+    <embed src="https://www.w3.org/TR/html4/images/strict.dtd" type="text/plain" width="400" height="200">
+
+    <!--
+      <embed>: Self-closing. No fallback.
+      Used for audio, video, flash, PDF, etc.
+    -->
+
+  </body>
+</html>

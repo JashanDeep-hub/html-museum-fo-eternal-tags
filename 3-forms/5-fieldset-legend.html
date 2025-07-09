@@ -1,0 +1,29 @@
+<!--
+  5-fieldset-legend.html
+  Exhibit: <fieldset> and <legend> — Group Therapy for Inputs
+
+  Lets you group inputs together. Rarely styled. Rarely used right.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title>Fieldset & Legend — Organize or Die</title></head>
+  <body>
+
+    <form>
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label>Name: <input type="text" name="name"></label><br>
+        <label>Age: <input type="number" name="age"></label>
+
+      </fieldset>
+
+    </form>
+
+    <p><code>&lt;fieldset&gt;</code> adds semantic grouping. <code>&lt;legend&gt;</code> titles the group.</p>
+    <p>Browsers add ugly borders by default. Most devs nuke them with CSS. We don’t touch it.</p>
+
+  </body>
+</html>

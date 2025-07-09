@@ -1,0 +1,50 @@
+<!--
+  5-keyboard-access-focus.html
+  Exhibit: Native Focus Tricks
+  tabbing, access keys, editable zones, hidden interactivity
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabindex, Accesskey, Editable & Focus</title>
+  </head>
+  <body>
+
+    <h2>Tab Order</h2>
+    <a href="#" tabindex="2">Second</a>
+    <a href="#" tabindex="1">First</a>
+    <a href="#" tabindex="3">Third</a>
+
+    <!--
+      tabindex: Controls focus order
+    -->
+
+    <h2>Accesskey</h2>
+    <button accesskey="s">Save [Alt+S]</button>
+
+    <!--
+      accesskey: Keyboard shortcut to activate
+    -->
+
+    <h2>Autofocus</h2>
+    <input type="text" placeholder="I get focus first" autofocus>
+
+    <h2>Contenteditable</h2>
+    <div contenteditable="true">Click here and type</div>
+
+    <!--
+      contenteditable: Makes any element editable
+    -->
+
+    <h2>Draggable</h2>
+    <div draggable="true">Drag me</div>
+
+    <h2>Hidden</h2>
+    <div hidden>This is hidden but still in DOM</div>
+
+    <h2>Inert (not widely supported)</h2>
+    <div inert>This area is inert — uninteractive</div>
+
+  </body>
+</html>

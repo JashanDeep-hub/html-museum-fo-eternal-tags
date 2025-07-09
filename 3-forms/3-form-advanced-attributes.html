@@ -1,0 +1,40 @@
+<!--
+  3-form-advanced-attributes.html
+  Exhibit: Advanced and Forgotten Form Attributes
+
+  Most devs ignore these. But real HTML warriors don’t.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Attributes — For the Brave</title>
+  </head>
+  <body>
+
+    <form id="evilForm">
+
+      <input type="text" name="username" required maxlength="20" minlength="3" autofocus placeholder="Username" inputmode="latin" autocomplete="username" spellcheck="false" dirname="username.dir">
+      <!--
+        required: field must be filled
+        maxlength / minlength: limits length
+        autofocus: auto-focuses on load (one per doc)
+        inputmode: hints virtual keyboard type (not enforced)
+        spellcheck: off/on for inputs
+        dirname: sends input direction (ltr/rtl) — HTML witchcraft
+      -->
+
+      <input type="submit" formaction="/special" formenctype="text/plain" formmethod="post" formtarget="_blank">
+      <!--
+        formaction: overrides form’s action
+        formmethod: overrides method
+        formtarget: overrides target
+        formenctype: overrides enctype
+      -->
+
+    </form>
+
+    <p>These attributes give you power... or headaches. Or both.</p>
+
+  </body>
+</html>

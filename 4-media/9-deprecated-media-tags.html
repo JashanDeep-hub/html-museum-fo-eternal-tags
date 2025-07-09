@@ -1,0 +1,32 @@
+<!--
+  9-deprecated-media-tags.html
+  Exhibit: Deprecated Media Tags — The Multimedia Crypt
+
+  These tags are dead or dying. But the browser still knows them.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deprecated Media Tags</title>
+  </head>
+  <body>
+
+    <!-- <bgsound>: IE-only background sound loop -->
+    <bgsound src="sound.wav" loop="infinite">
+
+    <!-- <noembed>: Alternative content for when <embed> fails (ancient Netscape) -->
+    <embed src="fallback.swf">
+    <noembed><p>Your browser can't embed this file.</p></noembed>
+
+    <!-- <param>: Used inside <object> to pass config to plugins -->
+    <object data="movie.swf" type="application/x-shockwave-flash">
+      <param name="autoplay" value="true">
+      <param name="loop" value="false">
+    </object>
+
+    <!-- <marquee>: Scrolling text disaster -->
+    <marquee behavior="scroll" direction="left">This tag is cursed.</marquee>
+
+  </body>
+</html>

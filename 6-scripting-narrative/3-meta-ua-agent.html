@@ -1,0 +1,35 @@
+<!--
+  3-meta-ua-agent.html
+  Exhibit: <meta> tag behaviors tied to scripting, UA, and redirect hacks.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><meta> as Behavioral Control</title>
+
+    <!-- Simulated refresh redirect -->
+    <meta http-equiv="refresh" content="5; url=https://example.com">
+
+    <!-- Spoof content-type -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Browser compatibility mode (IE only) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Robot control -->
+    <meta name="robots" content="noindex, nofollow">
+
+  </head>
+  <body>
+
+    <p>This page will redirect in 5 seconds... or not.</p>
+
+    <!--
+      http-equiv="refresh": Refresh/redirect after N seconds
+      http-equiv="X-UA-Compatible": Tell IE to render with specific engine
+      name="robots": SEO and crawler instruction
+    -->
+
+  </body>
+</html>

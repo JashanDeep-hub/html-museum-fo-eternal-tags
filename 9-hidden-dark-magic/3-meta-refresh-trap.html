@@ -1,0 +1,22 @@
+<!--
+  3-meta-refresh-trap.html
+  Exhibit: Meta redirect loop trap
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirection Trap</title>
+    <meta http-equiv="refresh" content="1; url=3-meta-refresh-trap.html">
+  </head>
+  <body>
+
+    <p>You’re stuck here forever... unless you kill the tab.</p>
+
+    <!--
+      This meta-refresh loops back to itself.
+      Can be used to trap users or auto-refresh pages endlessly.
+    -->
+
+  </body>
+</html>

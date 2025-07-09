@@ -1,0 +1,28 @@
+<!--
+  5-dead-entities-abuse.html
+  Exhibit: HTML entities used for trickery
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Entity Abuse</title>
+  </head>
+  <body>
+
+    <p>This&nbsp;&nbsp;&nbsp;sentence&nbsp;&nbsp;has&nbsp;invisible&nbsp;forces.</p>
+
+    <p>&#0000097;&#0000108;&#0000105;&#0000101;&#0000103;&#0000101;&#0000101;&#0000100;</p>
+
+    <!--
+      Named and numeric entities (decimal, hex) allow invisible injection.
+      The above spells "aligeeded" in unicode decimal codes.
+    -->
+
+  </body>
+</html>
+<!--
+  This example shows how HTML entities can be used to inject invisible characters.
+  The first paragraph uses non-breaking spaces to create extra space.
+  The second paragraph uses numeric entities to spell out a word with invisible characters.
+  This can be used for various tricks, like hiding text or creating visual effects.

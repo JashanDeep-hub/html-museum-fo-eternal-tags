@@ -1,0 +1,52 @@
+<!--
+  1-semantic-structure.html
+  Exhibit: HTML5 Semantic Tags — The Great Lie
+
+  These tags claim to be "meaningful". But browsers treat them the same as <div>.
+  Only screen readers and purists care.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Tags — Meaning Without Power</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>This is a <code>&lt;header&gt;</code></h1>
+      <p>It’s supposed to represent the intro for a page or section. But nobody enforces it.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Fake Navigation Link</a></li>
+        <li><a href="#">Another One</a></li>
+      </ul>
+    </nav>
+    <!-- <nav>: Supposed to wrap navigational links. Doesn’t validate them. It’s a formality. -->
+
+    <main>
+      <section>
+        <h2>This is a <code>&lt;section&gt;</code> in a <code>&lt;main&gt;</code></h2>
+        <p>Used for thematically grouped content. Most people use it as a styled div.</p>
+      </section>
+
+      <article>
+        <h3>This is an <code>&lt;article&gt;</code></h3>
+        <p>Used for standalone content like blog posts. Nobody follows the rules. Just another wrapper.</p>
+      </article>
+    </main>
+
+    <aside>
+      <p>This is <code>&lt;aside&gt;</code> — a sidebar, apparently. Nobody uses it correctly. Ever.</p>
+    </aside>
+
+    <footer>
+      <p>This is the <code>&lt;footer&gt;</code>. You’ve seen this on every website ever.</p>
+    </footer>
+
+    <!-- Browser treats all of these like <div>s. This is for screen readers, HTML validators, and your conscience. -->
+
+  </body>
+</html>

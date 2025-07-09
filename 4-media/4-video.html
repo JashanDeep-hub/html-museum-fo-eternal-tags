@@ -1,0 +1,54 @@
+<!--
+  4-video.html
+  Exhibit: <video> — Media Tag With Controls Built-In
+
+  Built-in support for video playback. Works with multiple sources and tracks.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><video> — Multimedia Guts</title>
+  </head>
+  <body>
+
+    <h2>Basic Video</h2>
+
+    <video src="sample.mp4" width="400" controls autoplay muted loop poster="poster.jpg">
+      Your browser doesn’t support <code>&lt;video&gt;</code>.
+    </video>
+
+    <!--
+      src: Default video
+      controls: Shows play/pause UI
+      autoplay: Starts automatically
+      muted: Required for autoplay to work without user interaction
+      loop: Repeats forever
+      poster: Placeholder image before playback
+    -->
+
+    <h2>Multiple <source> Fallbacks</h2>
+
+    <video controls width="400">
+      <source src="video.webm" type="video/webm">
+      <source src="video.mp4" type="video/mp4">
+      <p>Fallback content.</p>
+    </video>
+
+    <!--
+      <source>: Allows multiple formats for cross-browser support
+    -->
+
+    <h2>Subtitles with <track></h2>
+
+    <video controls width="400">
+      <source src="video.mp4" type="video/mp4">
+      <track src="subs.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+    <!--
+      <track>: Adds captions, subtitles, chapters, metadata
+    -->
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+  2-headers-and-blockquotes.html
+  Exhibit: Headers, Blockquotes, and Misused Semantics
+
+  These tags provide structure... if you don’t screw them up.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Headers & Blockquote Abuse</title>
+  </head>
+  <body>
+    <h1>This is an H1</h1>
+    <h2>This is an H2</h2>
+    <h3>This is an H3</h3>
+    <h4>This is an H4</h4>
+    <h5>This is an H5</h5>
+    <h6>This is an H6 — the sad forgotten runt</h6>
+
+    <!-- Headings go from H1 to H6. Don’t skip levels just because it “looks better.” -->
+
+    <hr>
+    <!-- Horizontal rule. Ugly, but it works. -->
+
+    <blockquote cite="https://html.spec.whatwg.org/">
+      Browsers are forgiving. Too forgiving. That’s the problem.
+    </blockquote>
+    <!-- <blockquote>: Semantic quoting of long blocks. 'cite' is optional and never shown. -->
+
+    <p>This is a <q cite="https://example.com">short quote</q> inside a paragraph.</p>
+    <!-- <q>: inline quote. Adds quotation marks automatically. Nobody uses it right. -->
+  </body>
+</html>

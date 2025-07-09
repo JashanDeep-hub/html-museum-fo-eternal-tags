@@ -1,0 +1,28 @@
+<!--
+  1-broken-attributes.html
+  Exhibit: Tags with garbage attributes still work
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attribute Abuse</title>
+  </head>
+  <body>
+
+    <div 🤡="clown" data-🔥="true" class===bold>
+      Attribute syntax broken, but still rendered.
+    </div>
+
+    <!--
+      Invalid attributes are ignored, not fatal.
+      Browsers skip or misinterpret silently.
+    -->
+
+  </body>
+</html>
+<!--
+  This example shows that HTML attributes can be broken or malformed,
+  but the browser will still render the element.
+  The attributes are ignored, but the element itself is not affected.
+  This demonstrates the forgiving nature of HTML parsing.

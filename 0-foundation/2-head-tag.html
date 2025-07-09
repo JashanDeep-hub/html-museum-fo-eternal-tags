@@ -1,0 +1,44 @@
+<!--
+  2-head-tag.html
+  Exhibit: <head> — The Metadata Crypt
+
+  The <head> contains info *about* the document, not the content itself.
+  Most people just dump <meta> tags in here like it’s a junk drawer.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><head> Tag Madness</title>
+
+    <!-- Standard charset tag. Needed if you don't want encoding nightmares. -->
+    <meta charset="UTF-8">
+
+    <!-- IE-specific compatibility trash -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- Mobile viewport wrangling. Everyone pastes this without knowing why. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Obscure meta that rarely matter anymore -->
+    <meta name="description" content="This is ignored by robots and SEOs alike.">
+    <meta name="author" content="The HTML Godfather">
+    <meta name="generator" content="Dreamweaver 2004">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!-- http-equiv used to send fake HTTP headers. Mostly a relic. -->
+    <meta http-equiv="refresh" content="5; url=https://example.com/">
+    <!-- The above one refreshes the page after 5 seconds. Most browsers hate it. -->
+
+    <meta http-equiv="content-language" content="en-us">
+    <!-- Redundant with lang attribute. But sure, pile it on. -->
+
+    <!-- Meta tags you never see anymore -->
+    <meta name="keywords" content="meta, trash, SEO, lies">
+    <meta http-equiv="pragma" content="no-cache">
+
+  </head>
+  <body>
+    <p><code>&lt;head&gt;</code> is for metadata, not your scripts and stylesheets — though they live there anyway. It’s a dumping ground.</p>
+  </body>
+</html>

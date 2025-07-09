@@ -1,0 +1,28 @@
+<!--
+  2-alt-label-for-title.html
+  Exhibit: alt, label, title, aria-label
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessible Labels</title>
+  </head>
+  <body>
+
+    <img src="cat.jpg" alt="Angry cat hissing" title="This cat is not happy">
+
+    <form>
+      <label for="email">Email</label>
+      <input id="email" type="email" aria-label="User email address">
+    </form>
+
+    <!--
+      alt: Required for <img>
+      title: Tooltip
+      label: Visible and tied to input
+      aria-label: Invisible label for machines
+    -->
+
+  </body>
+</html>

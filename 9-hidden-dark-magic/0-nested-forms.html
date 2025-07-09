@@ -1,0 +1,30 @@
+<!--
+  0-nested-forms.html
+  Exhibit: Form inside form — illegal but parsed
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Forms — Browser Crime</title>
+  </head>
+  <body>
+
+    <form action="/outer">
+      <input name="outer" value="A">
+
+      <!-- illegal nesting -->
+      <form action="/inner">
+        <input name="inner" value="B">
+      </form>
+
+      <input type="submit" value="Submit Outer">
+    </form>
+
+    <!--
+      Nested <form> tags are invalid.
+      Browsers usually ignore the inner <form> and treat it as part of the outer.
+    -->
+
+  </body>
+</html>

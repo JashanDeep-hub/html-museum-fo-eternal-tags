@@ -1,0 +1,35 @@
+<!--
+  3-progress-meter.html
+  Exhibit: <progress> and <meter>
+  Native bar elements, never styled, rarely respected.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><progress> and <meter> — Real Native Bars</title>
+  </head>
+  <body>
+
+    <h2>Progress (Task Completion)</h2>
+    <progress value="0.4" max="1"></progress>
+
+    <!--
+      <progress>: Indicates task completion
+      value: current
+      max: total
+    -->
+
+    <h2>Meter (Measurement)</h2>
+    <meter value="0.6" min="0" max="1" low="0.2" high="0.8" optimum="0.5">
+      60%
+    </meter>
+
+    <!--
+      <meter>: Represents a scalar value within a known range
+      low/high: range thresholds
+      optimum: target ideal value
+    -->
+
+  </body>
+</html>

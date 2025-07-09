@@ -1,0 +1,33 @@
+<!--
+  0-script-noscript.html
+  Exhibit: <script> and <noscript>
+  These define behavior and fallback — even when you're not using JS.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>script and noscript — Behavior Shells</title>
+    <!-- Script tag with type to prevent execution -->
+    <script type="text/plain">
+      console.log("This script won't run");
+    </script>
+
+    <!-- External script that never loads (fake) -->
+    <script src="fake.js" async defer nomodule type="application/javascript"></script>
+  </head>
+  <body>
+
+    <noscript>
+      <p><strong>JavaScript is disabled. This is your fallback.</strong></p>
+    </noscript>
+
+    <!--
+      type="text/plain": Prevents script execution (used in templating engines)
+      async: Download and run async
+      defer: Wait until document is parsed
+      nomodule: Skip this if browser supports ES modules
+    -->
+
+  </body>
+</html>

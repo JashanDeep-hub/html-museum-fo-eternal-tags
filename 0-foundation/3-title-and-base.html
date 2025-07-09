@@ -1,0 +1,26 @@
+<!--
+  3-title-and-base.html
+  Exhibit: <title> and <base> — Naming and Navigational Sorcery
+
+  <title> shows up in the browser tab. Required by HTML specs.
+  <base> rewires how relative links resolve. Can cause total chaos.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title Tag – Your Page’s First and Last Impression</title>
+
+    <!-- BASE sets a default URL for all relative links/images/scripts -->
+    <base href="https://example.com/subdir/" target="_blank">
+    <!-- All <a href="file.html"> now point to https://example.com/subdir/file.html -->
+    <!-- target="_blank" becomes the default for all links. Welcome to chaos. -->
+
+  </head>
+  <body>
+    <p><strong>Title:</strong> What shows in the browser tab or search engine title.</p>
+    <p><strong>Base:</strong> Hijacks every relative URL. Dangerous. Powerful. Misused constantly.</p>
+
+    <a href="page.html">This link actually goes to https://example.com/subdir/page.html</a>
+  </body>
+</html>

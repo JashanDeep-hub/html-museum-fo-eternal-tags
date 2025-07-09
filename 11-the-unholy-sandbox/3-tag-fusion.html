@@ -1,0 +1,26 @@
+<!--
+  3-tag-fusion.html
+  Exhibit: Fusing tags by mistake — browser tries to guess
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tag Fusion</title>
+  </head>
+  <body>
+
+    <div><span<p>This is garbage. But it still shows up.</p>
+
+    <!--
+      <span<p> — Invalid combo. HTML parser autocorrects.
+      You'll often see DOMs "fixing" this into something usable.
+    -->
+
+  </body>
+</html>
+<!--
+  This example shows how HTML can "fuse" tags together when the syntax is incorrect.
+  The browser tries to make sense of the malformed HTML and renders it anyway.
+  This can lead to unexpected results, but it also demonstrates the flexibility of HTML parsing.
+  It's a reminder that while HTML is forgiving, it's still best to write valid markup.

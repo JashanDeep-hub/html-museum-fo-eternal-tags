@@ -1,0 +1,33 @@
+<!--
+  0-role-aria-basic.html
+  Exhibit: role and aria-* attributes
+  Tags talk to machines here. Human eyes lie.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ARIA & Role — Accessibility Begins Here</title>
+  </head>
+  <body>
+
+    <nav role="navigation">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+
+    <section role="region" aria-label="Main Content">
+      <h1>Accessible Region</h1>
+      <p>This region is labeled and exposed to assistive tech.</p>
+    </section>
+
+    <div role="alert" aria-live="assertive">This will yell at screen readers.</div>
+
+    <!--
+      role: Semantic override
+      aria-label: Label an element
+      aria-live: Live region behavior
+    -->
+
+  </body>
+</html>

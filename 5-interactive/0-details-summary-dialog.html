@@ -1,0 +1,43 @@
+<!--
+  0-details-summary-dialog.html
+  Exhibit: <details>, <summary>, <dialog>
+  Native interactivity — hidden, forgotten, and criminally underused.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Details, Summary & Dialog — Native UI Sorcery</title>
+  </head>
+  <body>
+
+    <h1><details> and <summary></h1>
+
+    <details open>
+      <summary>Click to toggle me open and closed</summary>
+      <p>This paragraph is hidden until the summary is clicked.</p>
+    </details>
+
+    <!--
+      <details>: Expand/collapse container
+      <summary>: Visible clickable label
+      open: Attribute that makes it open by default
+    -->
+
+    <hr>
+
+    <h1><dialog> — Native Modal</h1>
+
+    <dialog open>
+      <p>This is a native HTML modal using <code>&lt;dialog open&gt;</code>.</p>
+      <p>No JS required when <code>open</code> is present.</p>
+    </dialog>
+
+    <!--
+      <dialog>: Modal/popup container
+      open: Displays it statically (JS-less)
+      Usually controlled with JS but can render statically with 'open'
+    -->
+
+  </body>
+</html>

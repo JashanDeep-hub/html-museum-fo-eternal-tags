@@ -1,0 +1,32 @@
+<!--
+  4-label-and-for.html
+  Exhibit: <label> — The Forgotten Ally
+
+  This tag links text to form inputs. Improves usability and accessibility.
+  Most devs ignore it and wonder why UX sucks.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title><label> — The Clickable Savior</title></head>
+  <body>
+
+    <form>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email">
+      <!-- 'for' links the label to input by ID. Clicking label focuses the input. -->
+
+      <br><br>
+
+      <label>
+        <input type="checkbox" name="agree"> I agree to suffer
+      </label>
+      <!-- Nested label form: input inside label. No need for 'for'. Safer. -->
+
+    </form>
+
+    <p><strong>Note:</strong> Without labels, screen readers choke. Don't be a monster.</p>
+
+  </body>
+</html>

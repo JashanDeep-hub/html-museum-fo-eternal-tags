@@ -1,0 +1,32 @@
+<!--
+  3-applet.html
+  Exhibit: <applet> — Java's HTML Failure
+
+  DEPRECATED. Unsupported in modern browsers.
+  Once used to embed Java applets in pages.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><applet> — Java's Corpse</title>
+  </head>
+  <body>
+
+    <h2><applet> is dead</h2>
+
+    <applet code="MyApplet.class" width="300" height="150">
+      Java applet fallback content.
+    </applet>
+
+    <!--
+      <applet>: Deprecated since HTML 4.01.
+      code: Path to .class or .jar file
+      width/height: Display box size
+      Inner content: Fallback if Java not supported
+    -->
+
+    <p>If you're seeing this, your browser doesn't hate you yet.</p>
+
+  </body>
+</html>

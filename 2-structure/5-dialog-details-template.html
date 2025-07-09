@@ -1,0 +1,50 @@
+<!--
+  5-dialog-details-template.html
+  Exhibit: HTML5 Structural Interactives — JS-Free Trickery
+
+  These elements allow interactivity without JavaScript.
+  Which means nobody uses them, naturally.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialogs, Details, and Templates</title>
+  </head>
+  <body>
+
+    <h2>Dialog — The Forgotten Native Modal</h2>
+
+    <dialog open>
+      <p>This is a native <code>&lt;dialog&gt;</code>. It renders like a modal.</p>
+      <p>No JavaScript needed if you just add <code>open</code>.</p>
+    </dialog>
+    <!-- <dialog>: Built-in modal container
+         open: Attribute to display it without scripting -->
+
+    <hr>
+
+    <h2>Details + Summary — JS-Free Expand/Collapse</h2>
+
+    <details open>
+      <summary>Click to toggle this section</summary>
+      <p>This is hidden content, revealed on demand.</p>
+    </details>
+    <!-- <details>: Expandable container
+         <summary>: The visible clickable title bar -->
+
+    <hr>
+
+    <h2>Template — The Inert Zombie Tag</h2>
+
+    <template id="dead-weight">
+      <p>This content is inside a <code>&lt;template&gt;</code>.</p>
+      <p>It won't render. It's like Schrödinger's HTML.</p>
+    </template>
+    <!-- <template>: Holds "inert" HTML content
+         Not rendered unless extracted with JS (but we won’t) -->
+
+    <p>Nothing below this line should display... but browsers are liars. If you see that template content, the browser failed.</p>
+
+  </body>
+</html>

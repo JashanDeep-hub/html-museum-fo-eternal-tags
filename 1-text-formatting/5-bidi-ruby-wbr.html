@@ -1,0 +1,58 @@
+<!--
+  5-bidi-ruby-wbr.html
+  Exhibit: Bidirectional Madness, Ruby Annotations, and Invisible Word Breaks
+
+  <bdi>, <bdo>: Control text direction for multilingual hell.
+  <ruby>, <rt>, <rp>: Annotate East Asian characters.
+  <wbr>: Breaks words without breaking brains (hopefully).
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bidi, Ruby, WBR — Linguistic Sorcery</title>
+  </head>
+  <body>
+
+    <h2>Bidirectional Text</h2>
+
+    <p>
+      User: <bdi>مرحبا</bdi>
+      <!-- <bdi>: BiDi Isolation — Prevents RTL from bleeding into surrounding LTR -->
+    </p>
+
+    <p>
+      Normal: Hello<br>
+      Flipped: <bdo dir="rtl">Hello</bdo>
+      <!-- <bdo>: BiDi Override — Forces text direction (Warning: very dangerous) -->
+    </p>
+
+    <hr>
+
+    <h2>Ruby Annotations</h2>
+
+    <p>
+      Japanese:
+      <ruby>漢<rt>kan</rt>字<rt>ji</rt></ruby>
+      <!-- <ruby>: Annotated characters
+           <rt>: Ruby text (reading)
+           <rp>: Fallback parenthesis if ruby unsupported -->
+    </p>
+
+    <p>
+      With fallback:
+      <ruby>漢<rp>(</rp><rt>kan</rt><rp>)</rp>字<rp>(</rp><rt>ji</rt><rp>)</rp></ruby>
+    </p>
+
+    <hr>
+
+    <h2>Word Break Opportunities</h2>
+
+    <p>Super<wbr>califragilistic<wbr>expiali<wbr>docious</p>
+    <!-- <wbr>: Word Break Opportunity — Invisible split point for long garbage words -->
+
+    <p>Without WBR: Antiestablishmentarianismisridiculousandunbroken</p>
+    <p>With WBR: Anti<wbr>establishment<wbr>arianism<wbr>is<wbr>ridiculous<wbr>and<wbr>unbroken</p>
+
+  </body>
+</html>

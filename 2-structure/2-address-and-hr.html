@@ -1,0 +1,32 @@
+<!--
+  2-address-and-hr.html
+  Exhibit: <address> and <hr> — Confused Identity Tags
+
+  <address> is NOT for your physical address. It’s for author contact info.
+  <hr> is just a horizontal line. People misuse both constantly.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><address> and <hr> — Misunderstood and Misused</title>
+  </head>
+  <body>
+
+    <p>Here’s an <code>&lt;hr&gt;</code> line — used to separate sections:</p>
+    <hr>
+    <!-- <hr>: Horizontal rule. Breaks content. That’s all it does. -->
+
+    <p>Now for the <code>&lt;address&gt;</code> tag:</p>
+
+    <address>
+      Written by <a href="mailto:html@hell.org">HTML Godfather</a><br>
+      Last updated July 2025<br>
+      Located in The Browser Abyss
+    </address>
+    <!-- <address>: Only valid for author contact. NOT physical street addresses. -->
+
+    <p><strong>Common Mistake:</strong> Using <code>&lt;address&gt;</code> for company locations. That’s wrong. Use <code>&lt;p&gt;</code> or <code>&lt;div&gt;</code> instead.</p>
+
+  </body>
+</html>

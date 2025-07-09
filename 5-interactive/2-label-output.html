@@ -1,0 +1,30 @@
+<!--
+  2-label-output.html
+  Exhibit: <label> and <output>
+  These tie input and result — no JS needed.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><label> and <output> — Native Binding</title>
+  </head>
+  <body>
+
+    <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+      <label for="a">A:</label>
+      <input type="range" id="a" name="a" value="10">
+      <label for="b">B:</label>
+      <input type="number" id="b" name="b" value="5">
+      <output name="result" for="a b">15</output>
+    </form>
+
+    <!--
+      <label>: Click-focuses the associated input
+      for: ID of associated input
+      <output>: Shows result; calculated automatically with 'oninput'
+      for (in output): space-separated list of input IDs
+    -->
+
+  </body>
+</html>

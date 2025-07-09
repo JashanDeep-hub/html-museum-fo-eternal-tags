@@ -1,0 +1,33 @@
+<!--
+  1-template-slot.html
+  Exhibit: <template> and <slot>
+  Part of the Web Components world — still useful without JS.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><template> and <slot> — Shadow Ghosts</title>
+  </head>
+  <body>
+
+    <template id="myTemplate">
+      <p>This content is inert and will not render unless cloned by JS.</p>
+    </template>
+
+    <!--
+      <template>: Content not rendered by browser
+    -->
+
+    <!-- Shadow DOM tags shown without functionality -->
+    <custom-element>
+      <slot name="header">Default Header</slot>
+      <slot>Default Content</slot>
+    </custom-element>
+
+    <!--
+      <slot>: Placeholder inside a custom element (normally used with Shadow DOM)
+    -->
+
+  </body>
+</html>

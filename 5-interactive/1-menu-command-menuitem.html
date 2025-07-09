@@ -1,0 +1,58 @@
+<!--
+  1-menu-command-menuitem.html
+  Exhibit: <menu>, <menuitem>, <command>
+  Interactive menus and commands — mostly forgotten, some deprecated, all HTML.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><menu>, <menuitem>, <command> — Browser Menu Graveyard</title>
+  </head>
+  <body>
+
+    <h2><menu> with <li> — Context Menu Fallback</h2>
+
+    <menu type="context">
+      <li><a href="#">Fake Right Click Option</a></li>
+      <li><a href="#">Another Option</a></li>
+    </menu>
+
+    <!--
+      type="context": Meant for context/right-click menus
+      Only some browsers ever supported this.
+    -->
+
+    <hr>
+
+    <h2><menu> with <command> — Button-Like Menus</h2>
+
+    <menu>
+      <command type="command" label="Save" icon="icon.png">
+      <command type="checkbox" label="Enable Feature" checked>
+      <command type="radio" label="Option A" radiogroup="group1">
+      <command type="radio" label="Option B" radiogroup="group1" checked>
+    </menu>
+
+    <!--
+      <command>: Obsolete but still parsed
+      type: command | checkbox | radio
+      label: visible text
+      icon: legacy image URL
+      radiogroup: group for radio-type commands
+    -->
+
+    <hr>
+
+    <h2>Obsolete: <menuitem></h2>
+
+    <menu>
+      <menuitem label="Obsolete Item" icon="icon.png"></menuitem>
+    </menu>
+
+    <!--
+      <menuitem>: Deprecated and unsupported in modern browsers.
+    -->
+
+  </body>
+</html>

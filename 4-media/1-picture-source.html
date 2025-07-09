@@ -1,0 +1,44 @@
+<!--
+  1-picture-source.html
+  Exhibit: <picture> and <source> — Responsive Image Madness
+
+  These tags let you serve different images based on device or media type.
+  They're powerful — and easy to screw up.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><picture> and <source> — The Responsive Clownsuit</title>
+  </head>
+  <body>
+
+    <h2>Responsive Images with <picture></h2>
+
+    <picture>
+      <source srcset="https://via.placeholder.com/600x200" media="(min-width: 600px)">
+      <source srcset="https://via.placeholder.com/300x100" media="(max-width: 599px)">
+      <img src="https://via.placeholder.com/400x150" alt="Fallback image">
+    </picture>
+
+    <!--
+      <source>: Used inside <picture> to define media-specific options.
+      media: CSS media query.
+      srcset: Source to use if media query matches.
+      <img>: Always required as fallback for unsupported <picture>.
+    -->
+
+    <h2>MIME Type Switching</h2>
+
+    <picture>
+      <source srcset="image.webp" type="image/webp">
+      <source srcset="image.jpg" type="image/jpeg">
+      <img src="image.png" alt="Fallback image">
+    </picture>
+
+    <!--
+      type: MIME filter. Browser picks the first type it supports.
+    -->
+
+  </body>
+</html>

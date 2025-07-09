@@ -1,0 +1,30 @@
+<!--
+  5-audio.html
+  Exhibit: <audio> — Video’s Little Brother
+
+  Same as <video>, but for sound only.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><audio> — Sound Without Script</title>
+  </head>
+  <body>
+
+    <h2>Basic Audio</h2>
+
+    <audio src="sound.mp3" controls autoplay loop muted>
+      Your browser doesn’t support <code>&lt;audio&gt;</code>.
+    </audio>
+
+    <h2>Multiple Sources</h2>
+
+    <audio controls>
+      <source src="sound.ogg" type="audio/ogg">
+      <source src="sound.mp3" type="audio/mpeg">
+      Fallback content if neither audio type is supported.
+    </audio>
+
+  </body>
+</html>

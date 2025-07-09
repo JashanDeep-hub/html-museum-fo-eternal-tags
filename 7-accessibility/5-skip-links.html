@@ -1,0 +1,31 @@
+<!--
+  5-skip-links.html
+  Exhibit: Skip navigation with <a href="#main">
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skip Link Demo</title>
+  </head>
+  <body>
+
+    <a href="#main" style="position:absolute;left:-9999px;">Skip to content</a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/news">News</a>
+    </nav>
+
+    <main id="main">
+      <h1>Main Content</h1>
+      <p>Focus lands here if skip is used.</p>
+    </main>
+
+    <!--
+      Skip links improve keyboard UX
+      Positioning them off-screen is a common trick
+    -->
+
+  </body>
+</html>

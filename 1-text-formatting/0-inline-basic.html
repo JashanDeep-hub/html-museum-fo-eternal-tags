@@ -1,0 +1,61 @@
+<!--
+  0-inline-basic.html
+  Exhibit: Inline Formatting Tags — The Text War Begins
+
+  These are the ancient inline tags people still use like cavemen beating rocks.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inline Formatting – The Basic Offenders</title>
+  </head>
+  <body>
+    <p>This is a <b>bold</b> tag. It makes text bold. That’s it. No meaning. Just weight.</p>
+    <!-- <b>: BOLD — not semantic, not smart. Just makes text bold. -->
+
+    <p>This is an <i>italic</i> tag. Same deal. No meaning. Just slanty nonsense.</p>
+    <!-- <i>: ITALIC — again, no semantic meaning. Just tilt. -->
+
+    <p>This is <u>underlined</u> using <code>&lt;u&gt;</code>, which confuses people because links are underlined too.</p>
+    <!-- <u>: UNDERLINE — visual only. Dangerous because users confuse it for links. -->
+
+    <p>This is <s>struck through</s> using <code>&lt;s&gt;</code>. Because deleting content is for cowards.</p>
+    <!-- <s>: STRIKETHROUGH — used for items no longer relevant. Visually hides but doesn't delete. -->
+
+    <p>This is <sub>subscript</sub> and this is <sup>superscript</sup>. Useful for chemical formulas and copyright trolls.</p>
+    <!-- <sub>: SUBSCRIPT — drops text lower.
+         <sup>: SUPERSCRIPT — raises text. -->
+
+    <p>This is <small>small text</small>. It used to be useful. Now it just hurts your eyes.</p>
+    <!-- <small>: makes text tiny. Not semantic. -->
+
+    <p>This is <mark>highlighted</mark> text using <code>&lt;mark&gt;</code>. One of the rare modern tags people actually like.</p>
+    <!-- <mark>: highlights text like a yellow marker. Semantic! For once! -->
+
+    <p>This is <abbr title="World Health Organization">WHO</abbr> — it stands for something.</p>
+    <!-- <abbr>: abbreviation. Has optional 'title' attribute for expansion. -->
+
+    <p>This is <dfn title="An HTML element that defines the term being used">definition</dfn> text. Barely used. Looks like italics. Confuses everyone.</p>
+    <!-- <dfn>: "definition" tag. Supposed to mark where a term is defined. Useless in 99% of real projects. -->
+
+    <p>This is <code>code</code> inside a sentence. Like I’m doing now.</p>
+    <!-- <code>: marks inline code. Useful, but abused. -->
+
+    <p>This is <kbd>keyboard input</kbd>. Because everyone loves fake keys.</p>
+    <!-- <kbd>: represents keyboard input. Looks like <code>. -->
+
+    <p>This is <samp>program output</samp>. Like from a terminal or compiler. No one uses it correctly.</p>
+    <!-- <samp>: "sample output". Good luck finding a browser that styles it differently. -->
+
+    <p>This is <var>x</var> — it’s supposed to be a variable, but everyone uses <code>x</code> instead.</p>
+    <!-- <var>: used for math/variables. Mostly ignored. -->
+
+    <p>This is <bdi dir="rtl">BDI بالعربية</bdi> — bidirectional isolation. Good for right-to-left names.</p>
+    <!-- <bdi>: isolates part of text directionally. Rarely needed unless you're deep in language support hell. -->
+
+    <p>This is <bdo dir="rtl">reversed text</bdo>. Forced RTL mode. Browser punch in the face.</p>
+    <!-- <bdo>: BiDirectional Override. Forces direction. Extremely niche. -->
+
+  </body>
+</html>

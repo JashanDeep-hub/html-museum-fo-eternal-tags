@@ -1,0 +1,31 @@
+<!--
+  8-inputmode-vs-type.html
+  Exhibit: inputmode — The Mobile Input Trick
+
+  inputmode controls the virtual keyboard. type controls validation.
+  They are not the same. Most people screw this up.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head><title>inputmode vs type — Keyboard Lies</title></head>
+  <body>
+
+    <form>
+
+      <label>Enter digits with <code>type="text" inputmode="numeric"</code>:</label><br>
+      <input type="text" inputmode="numeric" pattern="[0-9]*">
+
+      <p>This gives a numeric keyboard on mobile, but skips number-type validation.</p>
+
+      <label>Enter number with <code>type="number"</code>:</label><br>
+      <input type="number">
+
+      <p>But this one gives spinners, and sometimes broken behavior with decimals.</p>
+
+    </form>
+
+    <p><strong>Truth:</strong> Use <code>inputmode</code> to control keyboards. Use <code>type</code> for validation. Never trust either.</p>
+
+  </body>
+</html>
