@@ -117,11 +117,6 @@ Real-world usage (or abuse)
 
 This is a living document in code, where the output and the comment are one.
 
-👤 Author
-Jashan Deep
-Frontend enthusiast. HTML purist. Semantic extremist.
-Dedicated to preserving and teaching HTML in its purest, most complete form.
-
 📄 License
 This archive is public domain. Use it for education, testing, experimentation, or chaos.
 
