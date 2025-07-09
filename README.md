@@ -32,40 +32,6 @@
 ---
 
 ## 🧱 Folder Structure
-html-museum-of-eternal-tags/
-
-├── README.md
-
-├── index.html
-
-├── 0-foundation/
-
-├── 1-text-formatting/
-
-├── 2-structure/
-
-├── 3-forms/
-
-├── 4-media/
-
-├── 5-interactive/
-
-├── 6-scripting-narrative/
-
-├── 7-accessibility/
-
-├── 8-deprecated/
-
-├── 9-hidden-dark-magic/
-
-├── 10-browser-quirks/
-
-└── 11-the-unholy-sandbox/
-
-Each folder contains `.html` files, each file focused on **one or more tags or behaviors**, and **documented inline** via comments.
-
----
-
 ## 📊 Project Stats
 
 | Category                 | Description                                             | File Count |
