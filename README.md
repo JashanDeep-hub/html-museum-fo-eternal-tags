@@ -1,6 +1,6 @@
 # 🏛️ HTML Museum of Eternal Tags
 
-**Curated by**: Jashan Deep  
+**Created by**: Jashan Deep  
 **Status**: ✅ Complete  
 **Files**: 96 `.html` exhibits across 12 categorized folders  
 **Focus**: Pure HTML, fully annotated, from HTML 1.0 to the Living Standard — every tag, every attribute, every abuse.
